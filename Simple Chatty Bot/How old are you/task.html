@@ -1,0 +1,40 @@
+<h2 style="text-align: center;">Description</h2>
+
+<p>At this stage, you will introduce yourself to the bot. He will greet you by your name and then try to guess your age
+    using arithmetic operations.</p>
+
+<p>Your program must print the following lines:</p>
+
+<pre><code class="language-no-highlight">Hello! My name is Aid.
+I was created in 2018.
+Please, remind me your name.
+What a great name you have, {yourName}!
+Let me guess your age.
+Enter remainders of dividing your age by 3, 5 and 7.
+Your age is {yourAge}; that's a good time to start programming!</code></pre>
+
+<p>You may change the name and the creation year of your bot if you want.</p>
+
+<p>Instead of <code class="language-xml">{yourName}</code>, the bot must print your name entered from the standard
+    input. Instead of <code class="language-xml">{yourAge}</code>, the bot must determine your age according to the
+    following formula:</p>
+
+<pre><code class="language-xml">age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105</code></pre>
+
+<p>Where <code class="language-xml">remainder3</code>, <code class="language-xml">remainder5</code> and <code
+        class="language-xml">remainder7</code> is three numbers you input to the program.</p>
+
+<p>Here is an example of a dialogue with the bot. Input lines are started with "&gt;" symbol. You do not need to read
+    this symbol.</p>
+
+<pre><code class="language-xml">Hello! My name is Aid.
+I was created in 2018.
+Please, remind me your name.
+&gt; Max
+What a great name you have, Max!
+Let me guess your age.
+Enter remainders of dividing your age by 3, 5 and 7.
+&gt; 1 2 1
+Your age is 22; that's a good time to start programming!</code></pre>
+
+<p>Use the provided template to simplify your work. You can change the text, but not the number of printed lines.</p>

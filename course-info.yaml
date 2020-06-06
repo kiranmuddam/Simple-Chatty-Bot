@@ -9,5 +9,6 @@ summary: Here, at the beginning of your programmer’s path, creating a simple c
 programming_language: Java
 programming_language_version: 11
 content:
+- Simple Chatty Bot
 - Problems
 mode: Study

@@ -1,0 +1,22 @@
+[1;31m
+Start test 1[0m
+Hello! My name is Curvy.
+I was created in 2020.
+Please, remind me your name.
+> John
+!What a great name you have, John!
+Let me guess your age.
+4Enter remainders of dividing your age by 3, 5 and 7.
+> 1 2 1
+8Your age is 22; that's a good time to start programming!
+[1;31m
+Start test 2[0m
+Hello! My name is Curvy.
+I was created in 2020.
+Please, remind me your name.
+> Nick
+!What a great name you have, Nick!
+Let me guess your age.
+4Enter remainders of dividing your age by 3, 5 and 7.
+> 2 0 0
+8Your age is 35; that's a good time to start programming!

@@ -4,53 +4,49 @@ buildscript {
     }
 }
 
-def printOutput(def output) {
-    return tasks.create("printOutput") {
-        for (line in output.toString().readLines()) {
-            println "#educational_plugin" + line
-        }
-    }
-}
-
 subprojects {
     apply plugin: 'application'
     apply plugin: 'java'
 
-    sourceCompatibility = 1.8
+    sourceCompatibility = 11
 
     repositories {
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 
     dependencies {
         testCompile group: 'junit', name: 'junit', version: '4.12'
+        implementation 'com.github.stefanbirkner:system-rules:1.19.0'
+        testImplementation 'com.github.hyperskill:hs-test:v7.0.1'
     }
 
     sourceSets {
-        main {
-            java.srcDir 'src'
-        }
-        test {
-            java.srcDir 'test'
+        main.java.srcDir 'src'
+        test.java.srcDir 'test'
+    }
+
+    test {
+        systemProperty "file.encoding", "utf-8"
+        outputs.upToDateWhen { false }
+        afterTest { TestDescriptor test, TestResult result ->
+            if (result.resultType == TestResult.ResultType.FAILURE) {
+                def message = result.exception?.message ?: "Wrong answer"
+                def lines = message.readLines()
+                println "#educational_plugin FAILED + " + lines[0]
+                lines[1..-1].forEach { line ->
+                    println "#educational_plugin" + line
+                }
+            }
         }
     }
 
-    mainClassName = project.hasProperty("mainClass") ? project.getProperty("mainClass") : ""
-
-    def runOutput = new ByteArrayOutputStream()
-    tasks.run.setStandardOutput(runOutput)
-    tasks.run.doLast { printOutput(runOutput) }
-}
-
-project(':util') {
-    dependencies {
-        compile group: 'junit', name: 'junit', version: '4.12'
+    compileJava.options.encoding = 'UTF-8'
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
     }
 }
 
-configure(subprojects.findAll {it.name != 'util'}) {
-  dependencies {
-    compile project(':util').sourceSets.main.output
-    testCompile project(':util').sourceSets.test.output
-  }
+wrapper {
+    gradleVersion = '5.3.1'
 }
