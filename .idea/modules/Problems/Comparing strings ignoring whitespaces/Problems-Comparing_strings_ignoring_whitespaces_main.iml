@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":Problems-Comparing_strings_ignoring_whitespaces:main" external.linked.project.path="$MODULE_DIR$/../../../../Problems/Comparing strings ignoring whitespaces" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="Simple_Chatty_Bot" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../../Problems/Comparing strings ignoring whitespaces/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../Problems/Comparing strings ignoring whitespaces/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../Problems/Comparing strings ignoring whitespaces/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="util_main" />
+  </component>
+</module>
