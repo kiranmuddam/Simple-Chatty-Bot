@@ -4,14 +4,14 @@ hyperskill_project:
   is_template_based: true
   use_ide: true
 stages:
-  - id: 165
-    step: 5107
-  - id: 166
-    step: 5108
-  - id: 167
-    step: 5109
-  - id: 168
-    step: 5110
+- id: 165
+  step: 5107
+- id: 166
+  step: 5108
+- id: 167
+  step: 5109
+- id: 168
+  step: 5110
 topics:
   0:
     - title: Introduction to Java

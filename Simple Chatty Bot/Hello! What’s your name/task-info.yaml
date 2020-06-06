@@ -1,66 +1,66 @@
 type: edu
 custom_name: Hello! What’s your name?
 files:
-  - name: src/bot/SimpleBot.java
-    visible: true
-    text: |
-      package bot;
+- name: src/bot/SimpleBot.java
+  visible: true
+  text: |
+    package bot;
 
-      public class SimpleBot {
-          public static void main(String[] args) {
-              // write your code here
-          }
-      }
-    learner_created: false
-  - name: test/PersonalAssistantTest.java
-    visible: false
-    text: |
-      import bot.SimpleBot;
-      import org.hyperskill.hstest.testcase.CheckResult;
-      import org.hyperskill.hstest.stage.StageTest;
-      import org.hyperskill.hstest.testcase.TestCase;
+    public class SimpleBot {
+        public static void main(String[] args) {
+            // write your code here
+        }
+    }
+  learner_created: false
+- name: test/PersonalAssistantTest.java
+  visible: false
+  text: |
+    import bot.SimpleBot;
+    import org.hyperskill.hstest.testcase.CheckResult;
+    import org.hyperskill.hstest.stage.StageTest;
+    import org.hyperskill.hstest.testcase.TestCase;
 
-      import java.util.List;
+    import java.util.List;
 
 
-      public class PersonalAssistantTest extends StageTest {
+    public class PersonalAssistantTest extends StageTest {
 
-          public PersonalAssistantTest() {
-              super(SimpleBot.class);
-          }
+        public PersonalAssistantTest() {
+            super(SimpleBot.class);
+        }
 
-          @Override
-          public List<TestCase> generate() {
-              return List.of(
-                  new TestCase<>()
-              );
-          }
+        @Override
+        public List<TestCase> generate() {
+            return List.of(
+                new TestCase<>()
+            );
+        }
 
-          @Override
-          public CheckResult check(String reply, Object clue) {
+        @Override
+        public CheckResult check(String reply, Object clue) {
 
-              String[] lines = reply.trim().split("\n");
+            String[] lines = reply.trim().split("\n");
 
-              if (lines.length != 2) {
-                  return CheckResult.wrong(
-                      "You should output exactly 2 lines!\n" +
-                      "Lines found: " + lines.length
-                  );
-              }
+            if (lines.length != 2) {
+                return CheckResult.wrong(
+                    "You should output exactly 2 lines!\n" +
+                    "Lines found: " + lines.length
+                );
+            }
 
-              String secondLine = lines[1];
+            String secondLine = lines[1];
 
-              if (!secondLine.matches(".*\\d.*")) {
-                  return CheckResult.wrong(
-                      "The second line should contain a year!\n" +
-                      "Your second line: \"" + secondLine + "\""
-                  );
-              }
+            if (!secondLine.matches(".*\\d.*")) {
+                return CheckResult.wrong(
+                    "The second line should contain a year!\n" +
+                    "Your second line: \"" + secondLine + "\""
+                );
+            }
 
-              return CheckResult.correct();
-          }
-      }
-    learner_created: false
+            return CheckResult.correct();
+        }
+    }
+  learner_created: false
 feedback_link: https://hyperskill.org/projects/31/stages/165/implement
 status: Solved
 record: 1
