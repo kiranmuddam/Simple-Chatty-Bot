@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PersonalAssistantTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-06T08:43:23" hostname="N3XuSPrIM3" time="0.224">
+<testsuite name="PersonalAssistantTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-07T04:18:11" hostname="N3XuSPrIM3" time="0.272">
   <properties/>
-  <testcase name="start" classname="PersonalAssistantTest" time="0.224"/>
+  <testcase name="start" classname="PersonalAssistantTest" time="0.272"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Hello! My name is Curvy.
@@ -10,7 +10,7 @@ Please, remind me your name.
 > Marry
 What a great name you have, Marry!
 Let me guess your age.
-Enter remainders of dividing your age by 3, 5 and 7.
+Say me remainders of dividing your age by 3, 5 and 7.
 > 1 0 5
 Your age is 40; that's a good time to start programming!
 Now I will prove to you that I can count to any number you want.
@@ -26,7 +26,16 @@ Now I will prove to you that I can count to any number you want.
 8!
 9!
 10!
-Completed, have a nice day!
+Let's test your programming knowledge.
+What is the capital of country India ?
+ 1. Hyderabad 
+ 2. Delhi 
+ 3. Chennai 
+ 4. Mumbai
+> 1
+Please, try again.
+> 2
+Congratulations, have a nice day!
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

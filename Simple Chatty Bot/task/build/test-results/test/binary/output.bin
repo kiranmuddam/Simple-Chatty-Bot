@@ -6,20 +6,30 @@
 > Marry
 "What a great name you have, Marry!
 Let me guess your age.
-4Enter remainders of dividing your age by 3, 5 and 7.
+5Say me remainders of dividing your age by 3, 5 and 7.
 > 1 0 5
 8Your age is 40; that's a good time to start programming!
 @Now I will prove to you that I can count to any number you want.
 > 10
-0!
-1!
-2!
-3!
-4!
-5!
-6!
-7!
-8!
-9!
-10!
-Completed, have a nice day!
+0!
+1!
+2!
+3!
+4!
+5!
+6!
+7!
+8!
+9!
+10!
+&Let's test your programming knowledge.
+&What is the capital of country India ?
+ 1. Hyderabad 
+ 2. Delhi 
+ 3. Chennai 
+
+ 4. Mumbai
+> 1
+Please, try again.
+> 2
+!Congratulations, have a nice day!
