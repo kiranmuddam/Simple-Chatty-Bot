@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Calculating factorials/Problems-Calculating_factorials.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Calculating factorials/Problems-Calculating_factorials.iml" group="Simple_Chatty_Bot/Problems-Calculating_factorials" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Calculating factorials/Problems-Calculating_factorials_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Calculating factorials/Problems-Calculating_factorials_main.iml" group="Simple_Chatty_Bot/Problems-Calculating_factorials" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Calculating factorials/Problems-Calculating_factorials_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Calculating factorials/Problems-Calculating_factorials_test.iml" group="Simple_Chatty_Bot/Problems-Calculating_factorials" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Check burgs/Problems-Check_burgs.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Check burgs/Problems-Check_burgs.iml" group="Simple_Chatty_Bot/Problems-Check_burgs" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Check burgs/Problems-Check_burgs_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Check burgs/Problems-Check_burgs_main.iml" group="Simple_Chatty_Bot/Problems-Check_burgs" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Check burgs/Problems-Check_burgs_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Check burgs/Problems-Check_burgs_test.iml" group="Simple_Chatty_Bot/Problems-Check_burgs" />
