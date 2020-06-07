@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class Main {
 
     public static int extractInt(double d) {
-        int extractedInt = (int) d;
-        return extractedInt;
+        return (int) d;
     }
 
     /* Do not change code below */
