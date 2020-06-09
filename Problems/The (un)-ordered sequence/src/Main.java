@@ -9,8 +9,6 @@ class Main {
         boolean isOrdered = true;
         while (currentNumber != 0) {
             if (prevNumber == currentNumber) {
-                prevNumber = currentNumber;
-                currentNumber = scanner.nextInt();
             } else if (prevNumber > currentNumber && (ascending == -1 || ascending == 1)) {
                 ascending = 1;
             } else if (prevNumber < currentNumber && (ascending == -1 || ascending == 0)) {
